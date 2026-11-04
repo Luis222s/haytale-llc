@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
+  <title id="title">Piscina de descanso</title><desc id="desc">Ilustración de piscina tropical con palmeras, tumbonas y mar caribeño.</desc>
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#95cdd0"/><stop offset="1" stop-color="#efdebd"/></linearGradient><linearGradient id="water" x2="0" y2="1"><stop stop-color="#91dcd8"/><stop offset="1" stop-color="#258d9e"/></linearGradient></defs>
+  <rect width="1000" height="720" fill="url(#sky)"/>
+  <circle cx="763" cy="129" r="70" fill="#ffeed1" opacity=".85"/>
+  <rect y="279" width="1000" height="260" fill="#4aaeb1"/>
+  <path d="M0 297c277 20 594-13 1000 3" fill="none" stroke="#d8fbef" stroke-width="8" opacity=".5"/>
+  <path d="M0 436c197-15 345-16 510-3s343 12 490-7v294H0Z" fill="#e7d8b6"/>
+  <path d="M0 488c262-20 432-19 624 10s285 11 376-4" fill="none" stroke="#f8f4df" stroke-width="14"/>
+  <path d="M0 535c236-23 392-16 536 19s298 46 464 24v142H0Z" fill="url(#water)"/>
+  <path d="M15 568c164-27 319-15 476 16 157 32 350 49 509 19M0 634c240-25 361 7 539 34 178 28 321 11 461 1" fill="none" stroke="#d6f9ee" stroke-width="6" opacity=".58"/>
+  <g transform="translate(45 23)"><path d="M65 505Q90 240 46 102" fill="none" stroke="#796446" stroke-width="27" stroke-linecap="round"/><path d="M46 102Q-58 26-143 38-43 89 49 114M46 102Q-26-41-105-64-48 33 49 115M46 102Q58-43 150-81 121 30 52 115M46 102Q165 31 256 63 137 104 52 115M46 102Q174 119 207 231 130 162 50 115M46 102Q-46 140-80 250-4 185 50 115" fill="#286d51"/></g>
+  <g transform="translate(933 118) scale(.65)"><path d="M10 660Q29 340-5 120" fill="none" stroke="#776243" stroke-width="35" stroke-linecap="round"/><path d="M-5 120Q-119 35-211 56-101 103 5 132M-5 120Q-80-34-150-56-94 49 5 131M-5 120Q42-42 143-76 104 45 5 131M-5 120Q133 43 235 88 113 116 5 131M-5 120Q148 164 176 283 87 196 5 131M-5 120Q-91 171-128 288-30 206 5 131" fill="#32775b"/></g>
+  <g transform="translate(217 416)"><path d="M0 80h235l-18 22H20Z" fill="#e8e0cf"/><path d="M18 34h189v45H18Z" fill="#f6f1e8"/><path d="M18 34 72 0h143l-8 34Z" fill="#fff9ee"/><path d="M40 100v21m170-21v21" stroke="#8a7f68" stroke-width="7"/></g>
+  <g transform="translate(540 400)"><path d="M0 80h235l-18 22H20Z" fill="#e8e0cf"/><path d="M18 34h189v45H18Z" fill="#f6f1e8"/><path d="M18 34 72 0h143l-8 34Z" fill="#fff9ee"/><path d="M40 100v21m170-21v21" stroke="#8a7f68" stroke-width="7"/></g>
+  <g transform="translate(434 354)"><path d="M0 65V0" stroke="#8b7b64" stroke-width="7"/><path d="M-113 8Q0-106 112 8Z" fill="#e5c3a0"/><path d="M-113 8h225" stroke="#f9e7cc" stroke-width="5"/></g>
+  <path d="M0 710c264-24 372-25 560 0" fill="none" stroke="#e8fef6" stroke-width="4" opacity=".7"/>
+</svg>
