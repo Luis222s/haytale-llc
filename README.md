@@ -6,6 +6,9 @@ Sitio académico de **tres páginas** que presenta el concepto de un hotel en **
 **Matrícula:** 2023-0685  
 **Tecnologías:** HTML5, CSS3 y JavaScript básico, sin frameworks.
 
+**Sitio publicado:** https://luis222s.github.io/haytale-llc/  
+**Repositorio:** https://github.com/Luis222s/haytale-llc
+
 ## Páginas del sitio
 
 | Página | Función |
@@ -41,8 +44,8 @@ Sitio académico de **tres páginas** que presenta el concepto de un hotel en **
 - [x] Tabla de seis filas con `caption`, secciones, cabeceras y combinaciones de celdas.
 - [x] Formulario con dos `fieldset`, nueve tipos de entrada, etiquetas asociadas, `select`/`optgroup`, `textarea`, radio, checkbox y botón.
 - [x] Validación nativa: `required`, `min`, `max`, `minlength` y `pattern`.
-- [ ] Confirmar la validación definitiva en el [validador HTML del W3C](https://validator.w3.org/nu/) después de publicar.
-- [ ] Confirmar la publicación y enlazar este repositorio desde GitHub Pages.
+- [x] Validación definitiva de las tres páginas en el [validador HTML del W3C](https://validator.w3.org/nu/): sin errores ni advertencias.
+- [x] Publicación en GitHub Pages desde la rama `main` y la carpeta raíz.
 
 ## Cómo abrir el proyecto
 
