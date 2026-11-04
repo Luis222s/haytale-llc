@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce la ubicación conceptual de Haytale LLC en Punta Cana y completa un formulario HTML5 de solicitud de estadía de demostración.">
+  <title>Contacto y solicitudes | Haytale LLC</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="Haytale LLC, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span class="brand-words"><span>HAYTALE</span><small>HOTEL &amp; RETREAT</small></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="header-cta" href="contacto.html#solicitud">Consultar estadía <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <p class="eyebrow eyebrow-light">HAYTALE · CONTACTO</p>
+        <h1 id="titulo-contacto">Cuéntanos cómo imaginas<br><em>tu descanso.</em></h1>
+        <p>Usa el siguiente formulario de demostración para explorar una solicitud de estadía. No se realiza ninguna reserva real ni se envían datos a un servidor.</p>
+      </div>
+    </section>
+
+    <section class="section-pad" id="solicitud" aria-labelledby="titulo-solicitud">
+      <div class="container contact-layout">
+        <aside class="contact-aside" aria-labelledby="titulo-datos">
+          <p class="eyebrow">PUNTA CANA, RD</p>
+          <h2 id="titulo-datos">Estamos en el corazón de tu próxima idea.</h2>
+          <p>Haytale es una propuesta académica de alojamiento en Punta Cana, República Dominicana.</p>
+          <address>
+            <strong>Haytale LLC — concepto hotelero</strong><br>
+            Zona de Punta Cana, La Altagracia<br>
+            República Dominicana<br>
+            <a href="mailto:contacto@haytale.example">contacto@haytale.example</a><br>
+            <a href="tel:+18095550100">+1 (809) 555-0100</a>
+          </address>
+          <p><small>Correo y teléfono demostrativos; no son canales reales de atención al público.</small></p>
+        </aside>
+
+        <div>
+          <p class="eyebrow">FORMULARIO HTML5</p>
+          <h2 class="section-title" id="titulo-solicitud">Tu viaje empieza <em>con un mensaje.</em></h2>
+          <p class="section-lead">Los campos marcados con * son obligatorios. La validación se realiza en tu navegador.</p>
+          <form class="contact-form" id="formulario-contacto" method="get">
+            <fieldset>
+              <legend>1. Datos de contacto</legend>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="nombre">Nombre completo *</label>
+                  <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80" autocomplete="name" placeholder="Escribe tu nombre">
+                </div>
+                <div class="field">
+                  <label for="correo">Correo electrónico *</label>
+                  <input type="email" id="correo" name="correo" required autocomplete="email" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="field">
+                  <label for="telefono">Teléfono *</label>
+                  <input type="tel" id="telefono" name="telefono" required pattern="[0-9()+ .-]{7,20}" title="Escribe de 7 a 20 caracteres: números, espacios, paréntesis, puntos, guiones o signo +." autocomplete="tel" placeholder="+1 809 555 0100">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>2. Preferencias de estadía</legend>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="fecha">Fecha tentativa de llegada *</label>
+                  <input type="date" id="fecha" name="fecha" required min="2026-11-04">
+                </div>
+                <div class="field">
+                  <label for="hora">Hora aproximada de llegada *</label>
+                  <input type="time" id="hora" name="hora" required>
+                </div>
+                <div class="field">
+                  <label for="personas">Número de huéspedes *</label>
+                  <input type="number" id="personas" name="personas" required min="1" max="12" value="2">
+                </div>
+                <div class="field">
+                  <label for="habitacion">Tipo de habitación *</label>
+                  <select id="habitacion" name="habitacion" required>
+                    <option value="">Selecciona una opción</option>
+                    <optgroup label="Habitaciones">
+                      <option value="clasica">Clásica</option>
+                      <option value="vista">Con vista</option>
+                    </optgroup>
+                    <optgroup label="Espacios familiares">
+                      <option value="suite">Suite familiar</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="tranquilidad">¿Qué nivel de tranquilidad buscas? <output id="valor-tranquilidad" for="tranquilidad">3</output>/5</label>
+                  <input type="range" id="tranquilidad" name="tranquilidad" min="1" max="5" step="1" value="3">
+                  <div class="range-row"><span>Con actividades</span><span>Máxima calma</span></div>
+                </div>
+                <div class="field full">
+                  <span class="field-label">Motivo del viaje *</span>
+                  <div class="choice-row">
+                    <label for="motivo-descanso"><input type="radio" id="motivo-descanso" name="motivo" value="descanso" required> Descanso</label>
+                    <label for="motivo-familia"><input type="radio" id="motivo-familia" name="motivo" value="familia"> Familia</label>
+                    <label for="motivo-aventura"><input type="radio" id="motivo-aventura" name="motivo" value="aventura"> Aventura</label>
+                  </div>
+                </div>
+                <div class="field full">
+                  <label for="mensaje">Mensaje o preferencias adicionales</label>
+                  <textarea id="mensaje" name="mensaje" rows="4" minlength="10" placeholder="Cuéntanos qué te gustaría disfrutar... "></textarea>
+                  <span class="field-hint">Si escribes un mensaje, utiliza al menos 10 caracteres.</span>
+                </div>
+                <div class="field full">
+                  <div class="choice-row"><label for="acepto"><input type="checkbox" id="acepto" name="acepto" required> Confirmo que entiendo que este formulario es únicamente una demostración académica. *</label></div>
+                </div>
+              </div>
+            </fieldset>
+            <button class="button button-dark" type="submit">Enviar solicitud de prueba <span aria-hidden="true">↗</span></button>
+            <p class="form-notice"><small>El mensaje se confirma solo en pantalla; no se almacenan ni transmiten los datos.</small></p>
+            <p class="form-status" id="estado-formulario" role="status" aria-live="polite" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad muted-band" aria-labelledby="titulo-ayuda">
+      <div class="container contact-faq">
+        <p class="eyebrow">PREGUNTAS FRECUENTES</p>
+        <h2 class="section-title" id="titulo-ayuda">Información <em>útil.</em></h2>
+        <details>
+          <summary>¿El formulario confirma una reserva?</summary>
+          <p>No. Este sitio es una demostración académica y su formulario únicamente muestra una confirmación local.</p>
+        </details>
+        <details>
+          <summary>¿Las tarifas y servicios están disponibles comercialmente?</summary>
+          <p>No se anuncian tarifas ni disponibilidad real. El contenido describe un concepto de hotel.</p>
+        </details>
+        <div class="reading-note">
+          <p><strong>Consejo de accesibilidad:</strong> puedes usar la tecla <kbd>Tab</kbd> para recorrer los campos y la tecla <kbd>Enter</kbd> para activar el botón de envío.</p>
+          <p><small>En HTML, el atributo <code>required</code> indica un campo obligatorio. Material actualizado el <time datetime="2026-11-04">4 de noviembre de 2026</time>.</small></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div><p class="footer-brand">HAYTALE <span>LLC</span></p><p>Un concepto de hotel en Punta Cana.</p></div>
+      <div><p class="footer-heading">Explorar</p><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></div>
+      <div><p class="footer-heading">Proyecto</p><p>Desarrollo académico de HTML5.</p><a href="README.md" download="Mapa-de-etiquetas-Haytale.md">Descargar mapa de etiquetas ↓</a></div>
+    </div>
+    <div class="container footer-bottom"><small>© 2026 Haytale LLC · Proyecto integrador</small><small>Realizado por <strong>Luis Aquino</strong> · Matrícula <strong>2023-0685</strong></small></div>
+  </footer>
+</body>
+</html>
