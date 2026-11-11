@@ -1,14 +1,15 @@
-# Capturas pendientes de revisión
+# Evidencias del diseño adaptable de Haytale LLC
 
-Esta carpeta contendrá capturas auténticas del sitio una vez que el rediseño esté publicado y se pueda revisar en un navegador.
+Las capturas muestran el sitio real de GitHub Pages en escritorio y en un iPhone.
 
-Guardar al menos:
+| Archivo | Evidencia |
+| --- | --- |
+| `index-escritorio.png` | Portada con diseño de dos columnas, imagen y navegación horizontal. |
+| `index-movil.png` | Portada con navegación compacta y botones adaptados. |
+| `menu-movil.png` | Menú hamburguesa abierto en iPhone. |
+| `inicio-contenido-movil.png` | Sección de habitaciones y pasos de visita. |
+| `servicios-filtrado-movil.png` | Buscador, contador y tarjeta de habitación filtrada. |
+| `contacto-movil.png` | Información del hotel y comienzo de la solicitud. |
+| `contacto-formulario-movil.png` | Campos y controles del formulario en iPhone, antes del ajuste del selector de fecha. |
 
-- `index-escritorio.png` (portada a 1440 px de ancho).
-- `index-movil.png` (portada a 360 px de ancho).
-- `servicios-escritorio.png` (catálogo con seis tarjetas).
-- `servicios-movil.png` (catálogo filtrado y diseño móvil).
-- `contacto-escritorio.png` (formulario completo).
-- `contacto-movil.png` (mensajes de validación accesibles).
-
-No se incluyen imágenes sintéticas que se hagan pasar por capturas reales.
+Las capturas del iPhone incluyen la interfaz del navegador y fueron tomadas antes de ajustar el ancho del campo de fecha. El resultado de ese último ajuste requiere una nueva comprobación en Safari.

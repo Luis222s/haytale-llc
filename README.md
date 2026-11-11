@@ -10,7 +10,25 @@ Sitio académico de un hotel conceptual en Punta Cana, República Dominicana. Es
 
 ## Capturas
 
-Las capturas de escritorio y móvil se incorporarán a `docs/capturas/` cuando se complete la revisión visual.
+Capturas auténticas de la web publicada, realizadas en un navegador de escritorio y en un iPhone. Las imágenes del teléfono muestran distintas partes de las páginas al desplazarse.
+
+**Portada de escritorio**
+
+![Portada Haytale LLC en un navegador de escritorio, con texto y resort en dos columnas](docs/capturas/index-escritorio.png)
+
+**Portada en móvil y menú desplegado**
+
+![Portada Haytale LLC en iPhone, con cabecera, llamada a la acción y resort](docs/capturas/index-movil.png)
+
+![Navegación móvil abierta con enlaces a Inicio, Servicios y Contacto](docs/capturas/menu-movil.png)
+
+**Catálogo filtrado y formulario en móvil**
+
+![Búsqueda de habitación clásica que muestra uno de seis servicios y su precio en pesos dominicanos](docs/capturas/servicios-filtrado-movil.png)
+
+![Formulario móvil con los campos personales y la fecha de llegada](docs/capturas/contacto-formulario-movil.png)
+
+Capturas adicionales de los contenidos de las tres páginas en [`docs/capturas/`](docs/capturas/).
 
 **Documentación técnica:** [Descargar PDF](docs/documentacion.pdf) (7 páginas, elaborado a partir de la rúbrica de la práctica).
 
@@ -67,10 +85,11 @@ README.md
 
 Abrir `index.html` con Live Server o visitar el sitio publicado. El formulario no envía ni almacena datos en un servidor.
 
-## Pendiente para la entrega
+## Revisión de entrega
 
 - Validación oficial realizada el 11 de noviembre de 2026: tres páginas HTML5 sin errores y hoja CSS3 sin errores (siete advertencias informativas sobre variables CSS).
-- Generar capturas de escritorio y móvil verificadas dentro de `docs/capturas/`.
-- Crear `docs/documentacion.pdf` conforme a la guía del docente, aún no facilitada.
-- Publicar y comprobar las tres rutas de GitHub Pages.
-- Conservar un historial de diez commits auténticos, claros y descriptivos.
+- Sitio publicado en GitHub Pages; se comprobaron las tres rutas, el menú, el modo oscuro, los filtros y la validación del formulario.
+- Capturas reales de escritorio y móvil incorporadas a `docs/capturas/`.
+- Documento técnico de siete páginas en `docs/documentacion.pdf`. La guía específica del docente no fue facilitada; este documento sigue la rúbrica disponible.
+- Comprobar nuevamente el diseño a 360 px y el campo de fecha en Safari después de publicar este último ajuste.
+- Mantener al menos diez commits con mensajes descriptivos.

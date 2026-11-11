@@ -152,6 +152,9 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--primario); }
   .seccion { padding-block: 2rem; }
   .formulario-seccion { padding: 1rem; }
   fieldset { padding: .75rem; }
+  /* Safari en iPhone puede imponer un ancho mínimo al selector nativo de fecha/hora. */
+  .formulario-seccion input[type="date"],
+  .formulario-seccion input[type="time"] { display: block; width: calc(100% - 2rem); max-width: 100%; }
   .pie-contenido { flex-direction: column; align-items: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
