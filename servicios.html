@@ -5,28 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Habitaciones, servicios y actividades de Haytale LLC en Punta Cana.">
   <title>Servicios | Haytale LLC</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
 </head>
 <body>
-  <header>
-    <p class="marca">Haytale LLC</p>
-    <nav aria-label="Menú principal">
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="contacto.html">Contacto</a>
+  <header class="cabecera"><div class="barra contenedor">
+    <a class="marca" href="index.html" aria-label="Haytale LLC, ir al inicio"><span class="marca-icono" aria-hidden="true">✦</span> HAYTALE <span>LLC</span></a>
+    <button class="menu-boton" type="button" aria-label="Abrir menú" aria-controls="menu-principal" aria-expanded="false">☰</button>
+    <nav class="navegacion" id="menu-principal" aria-label="Menú principal">
+      <a href="index.html">Inicio</a><a href="servicios.html" aria-current="page">Servicios</a><a href="contacto.html">Contacto</a>
     </nav>
+    <button class="tema-boton" type="button" aria-label="Activar modo oscuro" aria-pressed="false">☾ <span>Tema</span></button>
+  </div>
   </header>
 
-  <main>
-    <h1>Servicios de Haytale LLC</h1>
-    <section>
+  <main class="contenedor pagina-interior">
+    <p class="eyebrow">VIVE EL CARIBE A TU MANERA</p>
+    <h1>Experiencias para recordar</h1>
+    <p class="intro">Descubre las propuestas de alojamiento y actividades que imaginamos para cada huésped.</p>
+    <section class="seccion introduccion-servicios">
       <h2>Alojamiento y actividades</h2>
-      <article>
+      <article class="panel">
         <h3>Habitaciones</h3>
         <p>Proponemos habitaciones clásicas, con vista y familiares, para ofrecer un alojamiento <em>cómodo</em> a cada tipo de viajero.</p>
         <img src="assets/haytale-suite.svg" alt="Suite de hotel con cama amplia y balcón frente al mar" width="500" height="270">
       </article>
-      <aside>
+      <aside class="panel">
         <h3>Cómo organizar la visita</h3>
         <ol start="2" type="1">
           <li>Selecciona una habitación.</li>
@@ -37,30 +41,41 @@
       </aside>
     </section>
 
-    <section>
-      <h2>Tabla de servicios</h2>
+    <section class="seccion" id="catalogo">
+      <p class="eyebrow">ELIGE TU EXPERIENCIA</p>
+      <h2>Explora nuestros servicios</h2>
+      <div class="filtros">
+        <div class="campo-busqueda"><label for="buscar-servicio">Buscar servicio</label><input id="buscar-servicio" type="search" placeholder="Ej. piscina, suite, restaurante…"></div>
+        <div class="campo-busqueda"><label for="filtrar-categoria">Categoría</label><select id="filtrar-categoria"><option value="todas">Todas las categorías</option><option value="Alojamiento">Alojamiento</option><option value="Actividades">Actividades</option></select></div>
+      </div>
+      <p id="contador-servicios" class="contador" role="status" aria-live="polite"></p>
+      <div id="tarjetas-servicios" class="catalogo-grid"></div>
+      <p id="sin-resultados" class="sin-resultados" hidden>No encontramos servicios con esos filtros. Prueba otra búsqueda.</p>
+    </section>
+    <section class="seccion">
+      <h2>Tabla de servicios y tarifas</h2>
       <div class="tabla">
         <table>
-          <caption>Servicios propuestos en Haytale LLC</caption>
+          <caption>Tarifas de referencia en pesos dominicanos (DOP), no constituyen ofertas reales</caption>
           <thead>
-            <tr><th scope="col">Categoría</th><th scope="col">Servicio</th><th scope="col">Descripción</th></tr>
+            <tr><th scope="col">Categoría</th><th scope="col">Servicio</th><th scope="col">Descripción</th><th scope="col">Precio estimado</th></tr>
           </thead>
           <tbody>
-            <tr><th scope="rowgroup" rowspan="3">Alojamiento</th><th scope="row">Clásica</th><td>Para una o dos personas</td></tr>
-            <tr><th scope="row">Con vista</th><td>Vista al mar</td></tr>
-            <tr><th scope="row">Suite familiar</th><td>Para familias</td></tr>
-            <tr><th scope="rowgroup" rowspan="3">Actividades</th><th scope="row">Piscina</th><td>Recreación</td></tr>
-            <tr><th scope="row">Restaurante</th><td>Comida local</td></tr>
-            <tr><th scope="row">Excursión</th><td>Conocer Punta Cana</td></tr>
+            <tr><th scope="rowgroup" rowspan="3">Alojamiento</th><th scope="row">Habitación Clásica</th><td>Para una o dos personas; por noche</td><td>RD$ 4,500</td></tr>
+            <tr><th scope="row">Habitación con Vista</th><td>Vista al mar; por noche</td><td>RD$ 6,800</td></tr>
+            <tr><th scope="row">Suite Familiar</th><td>Para familias; por noche</td><td>RD$ 9,500</td></tr>
+            <tr><th scope="rowgroup" rowspan="3">Actividades</th><th scope="row">Acceso a Piscina</th><td>Recreación; por persona</td><td>RD$ 1,200</td></tr>
+            <tr><th scope="row">Restaurante Caribeño</th><td>Menú local; por persona</td><td>RD$ 1,800</td></tr>
+            <tr><th scope="row">Excursión Punta Cana</th><td>Recorrido guiado; por persona</td><td>RD$ 3,200</td></tr>
           </tbody>
           <tfoot>
-            <tr><td colspan="3">Total: seis servicios de ejemplo.</td></tr>
+            <tr><td colspan="4">Seis servicios académicos de ejemplo. Los precios son orientativos.</td></tr>
           </tfoot>
         </table>
       </div>
     </section>
 
-    <section>
+    <section class="seccion">
       <h2>Glosario</h2>
       <dl>
         <dt>Check-in</dt><dd>Registro de entrada al hotel.</dd>
@@ -74,9 +89,7 @@
     </section>
   </main>
 
-  <footer>
-    <p>Proyecto integrador de <strong>Luis Aquino</strong> · Matrícula <strong>2023-0685</strong>.</p>
-    <a href="README.md" download>Descargar mapa de etiquetas</a>
-  </footer>
+  <footer class="pie"><div class="contenedor pie-contenido"><p>© <span class="anio"></span> Haytale LLC · Proyecto de <strong>Luis Aquino</strong> · Matrícula <strong>2023-0685</strong>.</p><a href="README.md" download>Descargar mapa de etiquetas</a></div></footer>
+  <button class="volver-arriba" type="button" aria-label="Volver arriba">↑</button>
 </body>
 </html>

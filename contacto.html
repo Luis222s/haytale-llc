@@ -5,93 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Información de contacto y formulario HTML5 de Haytale LLC.">
   <title>Contacto | Haytale LLC</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
 </head>
 <body>
-  <header>
-    <p class="marca">Haytale LLC</p>
-    <nav aria-label="Menú principal">
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+  <header class="cabecera"><div class="barra contenedor">
+    <a class="marca" href="index.html" aria-label="Haytale LLC, ir al inicio"><span class="marca-icono" aria-hidden="true">✦</span> HAYTALE <span>LLC</span></a>
+    <button class="menu-boton" type="button" aria-label="Abrir menú" aria-controls="menu-principal" aria-expanded="false">☰</button>
+    <nav class="navegacion" id="menu-principal" aria-label="Menú principal"><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="contacto.html" aria-current="page">Contacto</a></nav>
+    <button class="tema-boton" type="button" aria-label="Activar modo oscuro" aria-pressed="false">☾ <span>Tema</span></button>
+  </div>
   </header>
 
-  <main>
-    <h1>Contacto</h1>
-    <section>
+  <main class="contenedor pagina-interior">
+    <p class="eyebrow">ESTAMOS PARA AYUDARTE</p>
+    <h1>Hablemos de tu próxima escapada</h1>
+    <p class="intro">Envíanos una solicitud de demostración y descubre cómo sería una estancia en Haytale.</p>
+    <div class="contacto-columnas"><div>
+    <section class="seccion">
       <h2>Datos del hotel</h2>
       <address>
         Haytale LLC — Zona de Punta Cana, República Dominicana.<br>
         Correo de ejemplo: <a href="mailto:contacto@haytale.example">contacto@haytale.example</a><br>
         Teléfono de ejemplo: <a href="tel:+18095550100">+1 809 555 0100</a>
       </address>
-      <aside>
+      <aside class="panel">
         <h3>Nota</h3>
         <p>El sitio y los datos de contacto son académicos. Completa el formulario con datos de prueba y usa <kbd>Tab</kbd> para moverte entre los campos.</p>
       </aside>
-    </section>
+    </section></div><div>
 
-    <section id="formulario">
+    <section class="seccion formulario-seccion" id="formulario">
       <h2>Formulario de solicitud</h2>
-      <form id="solicitud">
+      <form id="solicitud" novalidate>
         <fieldset>
           <legend>Datos personales</legend>
           <label for="nombre">Nombre *</label>
-          <input id="nombre" name="nombre" type="text" required minlength="3">
+          <input id="nombre" name="nombre" type="text" required minlength="3" autocomplete="name" aria-describedby="error-nombre"><span class="error" id="error-nombre"></span>
 
           <label for="correo">Correo *</label>
-          <input id="correo" name="correo" type="email" required>
+          <input id="correo" name="correo" type="email" required autocomplete="email" aria-describedby="error-correo"><span class="error" id="error-correo"></span>
+
+          <label for="confirmar-correo">Confirmar correo *</label>
+          <input id="confirmar-correo" name="confirmarCorreo" type="email" required autocomplete="email" aria-describedby="error-confirmar-correo"><span class="error" id="error-confirmar-correo"></span>
 
           <label for="telefono">Teléfono *</label>
-          <input id="telefono" name="telefono" type="tel" required pattern="[0-9()+ .-]{7,20}" title="Entre 7 y 20 caracteres, usando números y símbolos telefónicos.">
+          <input id="telefono" name="telefono" type="tel" required pattern="[0-9()+ .-]{7,20}" autocomplete="tel" title="Número dominicano con código 809, 829 u 849." aria-describedby="error-telefono"><span class="error" id="error-telefono"></span>
         </fieldset>
 
         <fieldset>
           <legend>Preferencias</legend>
           <label for="fecha">Fecha de llegada *</label>
-          <input id="fecha" name="fecha" type="date" required>
+          <input id="fecha" name="fecha" type="date" required aria-describedby="error-fecha"><span class="error" id="error-fecha"></span>
 
           <label for="hora">Hora *</label>
-          <input id="hora" name="hora" type="time" required>
+          <input id="hora" name="hora" type="time" required aria-describedby="error-hora"><span class="error" id="error-hora"></span>
 
           <label for="personas">Huéspedes *</label>
-          <input id="personas" name="personas" type="number" min="1" max="12" required>
+          <input id="personas" name="personas" type="number" min="1" max="12" required aria-describedby="error-personas"><span class="error" id="error-personas"></span>
 
           <label for="habitacion">Habitación *</label>
-          <select id="habitacion" name="habitacion" required>
+          <select id="habitacion" name="habitacion" required aria-describedby="error-habitacion">
             <option value="">Selecciona</option>
             <optgroup label="Habitaciones">
-              <option value="clasica">Clásica</option>
-              <option value="vista">Con vista</option>
+              <option value="clasica">Habitación Clásica</option>
+              <option value="vista">Habitación con Vista</option>
             </optgroup>
             <optgroup label="Familiares">
-              <option value="suite">Suite</option>
+              <option value="suite">Suite Familiar</option>
             </optgroup>
           </select>
+          <span class="error" id="error-habitacion"></span>
 
           <label for="tranquilidad">Tranquilidad deseada (1 a 5)</label>
           <input id="tranquilidad" name="tranquilidad" type="range" min="1" max="5" value="3">
 
-          <p>Motivo del viaje:</p>
-          <label for="descanso"><input id="descanso" name="motivo" type="radio" value="descanso" required> Descanso</label>
-          <label for="familia"><input id="familia" name="motivo" type="radio" value="familia"> Familia</label>
+          <p>Motivo del viaje: *</p>
+          <div class="opciones"><label for="descanso"><input id="descanso" name="motivo" type="radio" value="descanso" required aria-describedby="error-motivo"> Descanso</label><label for="familia"><input id="familia" name="motivo" type="radio" value="familia"> Familia</label></div><span class="error" id="error-motivo"></span>
 
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" rows="3" minlength="10"></textarea>
 
-          <label for="acepto"><input id="acepto" name="acepto" type="checkbox" required> Entiendo que es una demostración académica *</label>
+          <label for="acepto" class="check"><input id="acepto" name="acepto" type="checkbox" required aria-describedby="error-acepto"> Entiendo que es una demostración académica *</label><span class="error" id="error-acepto"></span>
         </fieldset>
         <button type="submit">Enviar prueba</button>
-        <p id="resultado" role="status" aria-live="polite"></p>
+        <div id="resultado" class="resultado" role="status" aria-live="polite"></div>
       </form>
-    </section>
+    </section></div></div>
   </main>
 
-  <footer>
-    <p>Proyecto integrador de <strong>Luis Aquino</strong> · Matrícula <strong>2023-0685</strong>.</p>
-    <a href="README.md" download>Descargar mapa de etiquetas</a>
-  </footer>
+  <footer class="pie"><div class="contenedor pie-contenido"><p>© <span class="anio"></span> Haytale LLC · Proyecto de <strong>Luis Aquino</strong> · Matrícula <strong>2023-0685</strong>.</p><a href="README.md" download>Descargar mapa de etiquetas</a></div></footer>
+  <button class="volver-arriba" type="button" aria-label="Volver arriba">↑</button>
 </body>
 </html>

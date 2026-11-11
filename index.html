@@ -5,27 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Haytale LLC, proyecto de hotel en Punta Cana, República Dominicana.">
   <title>Inicio | Haytale LLC</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
 </head>
 <body>
-  <header>
-    <p class="marca">Haytale LLC</p>
-    <nav aria-label="Menú principal">
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+  <header class="cabecera">
+    <div class="barra contenedor">
+      <a class="marca" href="index.html" aria-label="Haytale LLC, ir al inicio"><span class="marca-icono" aria-hidden="true">✦</span> HAYTALE <span>LLC</span></a>
+      <button class="menu-boton" type="button" aria-label="Abrir menú" aria-controls="menu-principal" aria-expanded="false">☰</button>
+      <nav class="navegacion" id="menu-principal" aria-label="Menú principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="tema-boton" type="button" aria-label="Activar modo oscuro" aria-pressed="false">☾ <span>Tema</span></button>
+    </div>
   </header>
 
-  <main>
-    <h1>Haytale LLC: hotel en Punta Cana</h1>
-    <section id="bienvenida">
-      <h2>Bienvenidos</h2>
-      <p><strong>Haytale LLC</strong> es una propuesta de hotel en Punta Cana, <abbr title="República Dominicana">RD</abbr>. Buscamos ofrecer <em>descanso</em>, comodidad y un ambiente <mark>tranquilo</mark>.</p>
-      <figure>
-        <img src="assets/haytale-resort.svg" alt="Hotel tropical con piscina, palmeras y vista al mar en Punta Cana" width="700" height="380">
-        <figcaption>Ilustración conceptual del hotel.</figcaption>
+  <main class="contenedor portada">
+    <div class="hero" id="bienvenida">
+      <div class="hero-texto">
+        <p class="eyebrow">PUNTA CANA · REPÚBLICA DOMINICANA</p>
+        <h1>Tu refugio en el <em>corazón del Caribe.</em></h1>
+        <p class="intro">Un destino imaginado para días de calma, experiencias memorables y vistas que invitan a quedarse.</p>
+        <div class="hero-acciones"><a class="boton" href="servicios.html">Explorar experiencias <span aria-hidden="true">→</span></a><a class="enlace-secundario" href="contacto.html#formulario">Solicitar información</a></div>
+      </div>
+      <figure class="hero-imagen">
+        <img src="assets/haytale-resort.svg" alt="Complejo turístico ilustrado con piscina azul, palmeras y mar Caribe" width="700" height="380">
+        <figcaption>El Caribe que imaginamos para Haytale LLC.</figcaption>
       </figure>
+    </div>
+    <div class="portada-columnas"><div>
+    <section class="seccion" id="propuesta">
+      <p class="eyebrow">NUESTRA ESENCIA</p>
+      <h2>Bienvenidos a Haytale</h2>
+      <p><strong>Haytale LLC</strong> es una propuesta de hotel en Punta Cana, <abbr title="República Dominicana">RD</abbr>. Buscamos ofrecer <em>descanso</em>, comodidad y un ambiente <mark>tranquilo</mark>.</p>
       <blockquote>
         <p>«Un lugar para descansar y disfrutar del Caribe».</p>
         <footer><cite>Propuesta de Haytale LLC</cite></footer>
@@ -33,7 +47,7 @@
       <p><small>Este sitio es un proyecto académico, no un hotel con reservas activas.</small></p>
     </section>
 
-    <section id="actividades">
+    <section class="seccion" id="actividades">
       <h2>Qué puedes disfrutar</h2>
       <article>
         <h3>Experiencias del hotel</h3>
@@ -48,7 +62,8 @@
           <li>Actividades en Punta Cana.</li>
         </ul>
       </article>
-      <aside>
+    </section></div>
+    <aside class="panel-lateral">
         <h3>Información adicional</h3>
         <p>Conoce nuestros <a href="servicios.html">servicios</a> o <a href="#ubicacion">consulta la ubicación</a>.</p>
         <details>
@@ -56,10 +71,10 @@
           <p>No. El formulario solo sirve como demostración.</p>
         </details>
         <p><small>Actualizado el <time datetime="2026-11-04">4 de noviembre de 2026</time>.</small></p>
-      </aside>
-    </section>
+        <div class="dato-destacado"><span>06</span><small>Experiencias disponibles</small></div>
+    </aside></div>
 
-    <section id="ubicacion">
+    <section class="seccion ubicacion" id="ubicacion">
       <h2>Ubicación y ambiente</h2>
       <p>El proyecto se sitúa en la zona general de Punta Cana. Puedes <a href="https://www.openstreetmap.org/#map=11/18.58/-68.37" target="_blank" rel="noopener noreferrer">consultar Punta Cana en el mapa</a>.</p>
       <iframe title="Mapa de la zona de Punta Cana" src="https://www.openstreetmap.org/export/embed.html?bbox=-68.48%2C18.49%2C-68.26%2C18.68&amp;layer=mapnik&amp;marker=18.58%2C-68.37" loading="lazy"></iframe>
@@ -71,9 +86,10 @@
     </section>
   </main>
 
-  <footer>
-    <p>Proyecto integrador de <strong>Luis Aquino</strong> · Matrícula <strong>2023-0685</strong>.</p>
-    <a href="README.md" download>Descargar mapa de etiquetas</a>
+  <footer class="pie"><div class="contenedor pie-contenido">
+    <p>© <span class="anio"></span> Haytale LLC · Proyecto de <strong>Luis Aquino</strong> · Matrícula <strong>2023-0685</strong>.</p>
+    <a href="README.md" download>Descargar mapa de etiquetas</a></div>
   </footer>
+  <button class="volver-arriba" type="button" aria-label="Volver arriba">↑</button>
 </body>
 </html>
