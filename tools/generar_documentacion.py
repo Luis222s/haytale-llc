@@ -85,8 +85,8 @@ def tabla(headers, rows, widths, fontsize=7.5):
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 10),
         ("RIGHTPADDING", (0, 0), (-1, -1), 10),
-        ("TOPPADDING", (0, 0), (-1, -1), 8),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+        ("TOPPADDING", (0, 0), (-1, -1), 6),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
         ("LINEBELOW", (0, 0), (-1, -1), .35, LINE),
     ]))
     return t
@@ -150,7 +150,7 @@ story += [P("1. Presentación del proyecto", "TitleH"),
               ("Estructura", "index.html · servicios.html · contacto.html", "Contenido, semántica, accesibilidad y formularios."),
               ("Diseño", "css/estilos.css", "Variables, componentes, Grid, Flexbox, estados y media queries."),
               ("Interacción", "js/app.js", "Eventos, almacenamiento de tema, catálogo, filtros y validación."),
-              ("Recursos", "assets/", "Ilustraciones SVG y audio de ambiente."),
+              ("Recursos", "img/ · assets/", "Ilustraciones SVG optimizadas y audio ambiental."),
               ("Entrega", "README.md · docs/", "Mapa de etiquetas, manual técnico y capturas."),
           ], [2.7*cm, 5.5*cm, width - 8.2*cm]), PageBreak()]
 
@@ -235,12 +235,12 @@ story += [P("6. Validación del formulario", "TitleH"),
           P("Respuesta al usuario", "SubtitleH"),
           P("Cada campo obligatorio tiene un span.error vacío que se llena cuando corresponde. El script asigna la clase invalido, retira el error al corregir y lleva el foco al primer campo pendiente en caso de fallos. Cuando todos los datos son válidos, muestra nombre, cantidad de huéspedes, habitación, fecha y correo dentro de la página."),
           P("7. Calidad, pruebas y validación", "TitleH"),
-          P("Se prepararon revisiones estáticas de estructura, enlaces a recursos locales y sintaxis JavaScript. Las pruebas visuales completas y los validadores oficiales deben ejecutarse sobre la versión final publicada antes de dar la entrega por cerrada."),
+          P("Se revisaron la sintaxis JavaScript, la estructura HTML, los recursos locales y las tres páginas publicadas. Los validadores oficiales W3C confirmaron cero errores en los tres HTML y en CSS3 el 11 de noviembre de 2026. Aún faltan las capturas finales y la comprobación específica de 360 px tras la reorganización de imágenes."),
           tabla(["Prueba", "Estado al preparar este documento"], [
               ("Sintaxis de js/app.js con node --check", "Comprobada sin errores de sintaxis."),
               ("Un único main y h1, nav activo y recursos locales", "Comprobación estructural inicial satisfactoria."),
-              ("W3C HTML y CSS", "Pendiente de ejecutar en los validadores oficiales."),
-              ("Consola, menú, tema y filtros en navegador", "Pendiente de prueba interactiva final."),
+              ("W3C HTML y CSS", "Tres HTML: 0 errores. CSS3: 0 errores y 7 advertencias informativas."),
+              ("Tema y filtros en navegador", "Modo oscuro persistente, búsqueda y mensajes vacíos comprobados."),
               ("Vista a 360 px y capturas", "Pendiente de revisión en navegador real."),
           ], [7.1*cm, width - 7.1*cm]), PageBreak()]
 

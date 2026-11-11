@@ -57,7 +57,8 @@ servicios.html
 contacto.html
 css/estilos.css
 js/app.js
-assets/                imágenes y audio
+img/                   ilustraciones SVG optimizadas
+assets/                audio ambiental
 docs/                  PDF y capturas finales
 README.md
 ```
@@ -68,7 +69,7 @@ Abrir `index.html` con Live Server o visitar el sitio publicado. El formulario n
 
 ## Pendiente para la entrega
 
-- Comprobar los tres HTML en https://validator.w3.org/ y CSS en https://jigsaw.w3.org/css-validator/.
+- Validación oficial realizada el 11 de noviembre de 2026: tres páginas HTML5 sin errores y hoja CSS3 sin errores (siete advertencias informativas sobre variables CSS).
 - Generar capturas de escritorio y móvil verificadas dentro de `docs/capturas/`.
 - Crear `docs/documentacion.pdf` conforme a la guía del docente, aún no facilitada.
 - Publicar y comprobar las tres rutas de GitHub Pages.

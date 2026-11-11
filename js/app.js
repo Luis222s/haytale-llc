@@ -2,12 +2,12 @@
 
 // 1. Datos compartidos: los nombres y precios coinciden con la tabla HTML.
 const servicios = [
-  { nombre: "Habitación Clásica", categoria: "Alojamiento", precio: 4500, descripcion: "Para una o dos personas; tarifa estimada por noche.", imagen: "assets/haytale-suite.svg", alt: "Habitación ilustrada con cama doble y balcón" },
-  { nombre: "Habitación con Vista", categoria: "Alojamiento", precio: 6800, descripcion: "Descanso con vista al mar; tarifa estimada por noche.", imagen: "assets/haytale-resort.svg", alt: "Resort frente al mar con palmeras y piscina" },
-  { nombre: "Suite Familiar", categoria: "Alojamiento", precio: 9500, descripcion: "Espacio diseñado para familias; tarifa estimada por noche.", imagen: "assets/haytale-suite.svg", alt: "Suite ilustrada con mobiliario y vista exterior" },
-  { nombre: "Acceso a Piscina", categoria: "Actividades", precio: 1200, descripcion: "Recreación en la piscina; tarifa estimada por persona.", imagen: "assets/haytale-pool.svg", alt: "Piscina de agua azul rodeada de jardines tropicales" },
-  { nombre: "Restaurante Caribeño", categoria: "Actividades", precio: 1800, descripcion: "Menú inspirado en la cocina local; tarifa estimada por persona.", imagen: "assets/haytale-resort.svg", alt: "Vista del entorno tropical del complejo hotelero" },
-  { nombre: "Excursión Punta Cana", categoria: "Actividades", precio: 3200, descripcion: "Recorrido guiado por la zona; tarifa estimada por persona.", imagen: "assets/haytale-pool.svg", alt: "Paisaje tropical del área recreativa del hotel" }
+  { nombre: "Habitación Clásica", categoria: "Alojamiento", precio: 4500, descripcion: "Para una o dos personas; tarifa estimada por noche.", imagen: "img/haytale-suite.svg", alt: "Habitación ilustrada con cama doble y balcón" },
+  { nombre: "Habitación con Vista", categoria: "Alojamiento", precio: 6800, descripcion: "Descanso con vista al mar; tarifa estimada por noche.", imagen: "img/haytale-resort.svg", alt: "Resort frente al mar con palmeras y piscina" },
+  { nombre: "Suite Familiar", categoria: "Alojamiento", precio: 9500, descripcion: "Espacio diseñado para familias; tarifa estimada por noche.", imagen: "img/haytale-suite.svg", alt: "Suite ilustrada con mobiliario y vista exterior" },
+  { nombre: "Acceso a Piscina", categoria: "Actividades", precio: 1200, descripcion: "Recreación en la piscina; tarifa estimada por persona.", imagen: "img/haytale-pool.svg", alt: "Piscina de agua azul rodeada de jardines tropicales" },
+  { nombre: "Restaurante Caribeño", categoria: "Actividades", precio: 1800, descripcion: "Menú inspirado en la cocina local; tarifa estimada por persona.", imagen: "img/haytale-resort.svg", alt: "Vista del entorno tropical del complejo hotelero" },
+  { nombre: "Excursión Punta Cana", categoria: "Actividades", precio: 3200, descripcion: "Recorrido guiado por la zona; tarifa estimada por persona.", imagen: "img/haytale-pool.svg", alt: "Paisaje tropical del área recreativa del hotel" }
 ];
 
 // 2. Funciones comunes: navegación, tema, año y vuelta arriba.

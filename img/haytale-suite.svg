@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
+  <title id="title">Suite con vista al mar</title><desc id="desc">Ilustración de una habitación de tonos cálidos con cama y balcón frente al océano.</desc>
+  <defs><linearGradient id="wall" x2="1" y2="1"><stop stop-color="#f7ebd9"/><stop offset="1" stop-color="#d3c4ad"/></linearGradient><linearGradient id="sea" x2="0" y2="1"><stop stop-color="#a4d7d3"/><stop offset="1" stop-color="#2c9b9f"/></linearGradient><linearGradient id="floor" x2="1" y2="1"><stop stop-color="#b99e7d"/><stop offset="1" stop-color="#8c7359"/></linearGradient></defs>
+  <rect width="1000" height="720" fill="url(#wall)"/>
+  <path d="M0 485h1000v235H0Z" fill="url(#floor)"/>
+  <path d="M0 507h1000" stroke="#f5dec0" stroke-width="8"/>
+  <rect x="230" y="55" width="550" height="420" rx="2" fill="#f7f0e1"/>
+  <rect x="253" y="79" width="504" height="374" fill="#a6d5d4"/>
+  <path d="M253 237h504v216H253Z" fill="url(#sea)"/>
+  <path d="M253 246c153 14 332-10 504 0" fill="none" stroke="#edf9e4" stroke-width="9" opacity=".6"/>
+  <path d="M253 371q140-14 263 14t241 2v66H253Z" fill="#e9dabd"/>
+  <path d="M505 79v374" stroke="#ede8dd" stroke-width="18"/>
+  <rect x="250" y="379" width="510" height="13" fill="#f6e7ce"/>
+  <path d="M202 43c-31 117-20 287 5 435l57-4c-26-142-33-286 6-431Z" fill="#e2cfb3"/>
+  <path d="M800 43c31 117 20 287-5 435l-57-4c26-142 33-286-6-431Z" fill="#e2cfb3"/>
+  <rect x="0" y="461" width="1000" height="18" fill="#cdbda5"/>
+  <ellipse cx="506" cy="638" rx="354" ry="73" fill="#c4a583" opacity=".65"/>
+  <rect x="136" y="376" width="720" height="198" rx="22" fill="#8d927f"/>
+  <rect x="164" y="408" width="663" height="180" rx="21" fill="#e9e1d2"/>
+  <path d="M165 499q330 37 660 0v92H165Z" fill="#f8f6ed"/>
+  <rect x="200" y="405" width="232" height="91" rx="15" fill="#fffdf4"/>
+  <rect x="570" y="405" width="224" height="91" rx="15" fill="#fffdf4"/>
+  <path d="M200 471q114 22 232-1m138 1q109 22 224-1" stroke="#eadac9" stroke-width="5" fill="none"/>
+  <rect x="119" y="492" width="70" height="99" fill="#a38161"/><rect x="804" y="492" width="72" height="99" fill="#a38161"/>
+  <rect x="111" y="480" width="84" height="20" fill="#b58d69"/><rect x="796" y="480" width="88" height="20" fill="#b58d69"/>
+  <path d="M141 454V337" stroke="#84755c" stroke-width="9"/><path d="m92 359 50-76 51 76Z" fill="#e9d6a4"/>
+  <path d="M839 454V337" stroke="#84755c" stroke-width="9"/><path d="m789 359 50-76 51 76Z" fill="#e9d6a4"/>
+  <g transform="translate(25 255)"><path d="M42 225V100" stroke="#725943" stroke-width="11"/><path d="M42 100Q-9 53-17 2 29 32 42 82Q72 12 107-6q-5 71-54 98 67-20 98 12-52 40-104 1" fill="#3f8066"/><path d="M5 223h76l-9 63H16Z" fill="#9c765c"/></g>
+</svg>
